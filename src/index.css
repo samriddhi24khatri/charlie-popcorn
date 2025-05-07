@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Lobster&display=swap');
+@import "tailwindcss";
+@import '@fontsource/league-spartan';
+@import '@fontsource/lobster';
+
+@plugin "daisyui";
+
+
+@plugin "daisyui/theme" {
+  name: "charlie";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98.1% 0.016 73.7);
+  --color-base-200: oklch(98.9% 0.009 81.2);
+  --color-base-300: oklch(95.6% 0.022 80.5);
+  --color-base-content: oklch(29.1% 0.003 275.0);
+  --color-primary: oklch(85.3% 0.155 83.2);
+  --color-primary-content: oklch(32.4% 0.065 78.4);
+  --color-secondary: oklch(45.2% 0.080 58.3);
+  --color-secondary-content: oklch(100% 0.000 0.0);
+  --color-accent: oklch(55.6% 0.170 29.3);
+  --color-accent-content: oklch(100% 0.000 0.0);
+  --color-neutral: oklch(55% 0.195 38.402);
+  --color-neutral-content: oklch(98% 0.016 73.684);
+  --color-info: oklch(42% 0.199 265.638);
+  --color-info-content: oklch(90% 0.076 70.697);
+  --color-success: oklch(43% 0.095 166.913);
+  --color-success-content: oklch(90% 0.076 70.697);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(39% 0.141 25.723);
+  --radius-selector: 2rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 1;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --gradient-start: var(--color-base-100);
+  --gradient-end: var(--color-base-200);
+}
+
+/* Gradient transition animation */
+@keyframes gradientTransition {
+  0% {
+    background: var(--gradient-start);
+  }
+  100% {
+    background: var(--gradient-end);
+  }
+}
+
+/* Gradient transition classes */
+.gradient-transition {
+  animation: gradientTransition 0.5s ease-in-out forwards;
+}
+
+/* Header gradient */
+.header-gradient {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+}
+
+/* About section gradient */
+.about-gradient {
+  background: linear-gradient(135deg, var(--gradient-end) 0%, var(--gradient-start) 100%);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: hsl(var(--b1));
+  color: hsl(var(--bc));
+}
+
+.content-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+/* Remove conflicting styles */
+a {
+  text-decoration: inherit;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Remove button styles as they're handled by DaisyUI */
+button {
+  font-family: inherit;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
