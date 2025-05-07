@@ -1,15 +1,11 @@
 // src/components/Flavors.jsx
 import React from 'react';
-import flavor1 from '../assets/salted.png';
-import flavor2 from '../assets/tomato.png';
-import flavor3 from '../assets/peri-peri.png';
-import flavor4 from '../assets/schezwan.png';
 
 const flavors = [
-  { name: 'Salted',      image: flavor1 },
-  { name: 'Tomato',      image: flavor2 },
-  { name: 'Peri‑Peri',   image: flavor3 },
-  { name: 'Schezwan',    image: flavor4 },
+  { name: 'Salted',      image: '/images/salted.png' },
+  { name: 'Tomato',      image: '/images/tomato.png' },
+  { name: 'Peri‑Peri',   image: '/images/peri-peri.png' },
+  { name: 'Schezwan',    image: '/images/schezwan.png' },
 ];
 
 export default function Flavors() {

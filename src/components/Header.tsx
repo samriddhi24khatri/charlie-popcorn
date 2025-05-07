@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import logo from '../assets/charlie-logo.png';
+const logo = '/images/charlie-logo.png';
 
 
 const navigation = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Flavors', href: '#flavors' },
-  { name: 'How to Order', href: '#order' },
+  { name: 'How to Order', href: '#how-to-order' },
   { name: 'FAQs', href: '#faq' },
   { name: 'Contact', href: '#contact' },
 ];
@@ -69,7 +69,9 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-8 font-league-spartan text-lg">
             <NavLinks linkClass="cursor-pointer" onClick={undefined} />
             <a
-              href="#order"
+              href="https://wa.me/918827006464?text=I%20want%20to%20place%20an%20order%20for%20Charlie%20Popcorn"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary btn-sm font-bold flex items-center gap-1 ml-4"
             >
               Order Now <span aria-hidden="true">→</span>
@@ -168,7 +170,13 @@ export default function Header() {
               Fresh, fun, and full of flavor! Discover the magic of gourmet popcorn, hand‑crafted for every occasion.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#order" className="btn btn-primary btn-lg px-8 font-bold" aria-label="Order now">
+              <a
+                href="https://wa.me/918827006464?text=I%20want%20to%20place%20an%20order%20for%20Charlie%20Popcorn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-lg px-8 font-bold"
+                aria-label="Order now"
+              >
                 Order Now <span aria-hidden="true">→</span>
               </a>
               <a href="#flavors" className="btn btn-outline btn-primary btn-lg px-8 font-bold" aria-label="See flavors">
@@ -178,7 +186,7 @@ export default function Header() {
           </div>
           {/* Mockup Image */}
           <div className="flex-1 flex justify-center lg:justify-end mb-8 lg:mb-0">
-            <img src="/src/assets/packets-hero.png" alt="Charlie Popcorn Bags Mockup" className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl w-full h-auto drop-shadow-2xl rounded-xl" />
+            <img src="/images/packets-hero.png" alt="Charlie Popcorn Bags Mockup" className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl w-full h-auto drop-shadow-2xl rounded-xl" />
           </div>
         </div>
       </section>

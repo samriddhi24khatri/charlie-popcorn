@@ -72,11 +72,10 @@ export default function HowToOrder() {
               />
               <span
                 style={{
-                  transition: 'color 0.2s ease',
+                  fontSize: '1rem',
+                  lineHeight: '1.5rem',
+                  color: 'var(--color-base-content)',
                 }}
-                className={`font-league-spartan ${
-                  selected.includes(flavor) ? 'color-base-content' : ''
-                }`}
               >
                 {flavor}
               </span>

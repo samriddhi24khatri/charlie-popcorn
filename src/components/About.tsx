@@ -45,10 +45,10 @@ export default function About() {
                   <span className="text-xl font-bold color-primary-content">10+</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold color-base-content font-league-spartan">
+                  <h3 style={{ fontFamily: 'League Spartan, sans-serif' }} className="text-lg font-semibold color-base-content">
                     Years of Experience
                   </h3>
-                  <p className="text-base color-base-content/80 font-league-spartan">
+                  <p style={{ fontFamily: 'League Spartan, sans-serif' }} className="text-base color-base-content/80">
                     Perfecting our craft
                   </p>
                 </div>

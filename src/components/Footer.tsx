@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/charlie-logo.png';
+const logo = '/images/charlie-logo.png';
 
 const footerNav = [
   { name: 'Home', href: '#home' },
